@@ -62,12 +62,12 @@ server:
       mime-types: application/json, application/xml
 spring:
    datasource:
-      driver-class-name: org.postgresql.Driver
-      jdbc-url: jdbc:postgresql://45.84.210.174:65432/cd15
-      username: cd15
-      password: ErAG$LNJiV*j
-      initial-size: 10
-      test-on-borrow: true
+         driver-class-name: org.postgresql.Driver
+         jdbc-url: jdbc:postgresql://45.84.210.174:65432/cd15
+         username: cd15
+         password: ErAG$LNJiV*j
+         initial-size: 10
+         test-on-borrow: true
    main:
       banner-mode: 'off'
    session:
