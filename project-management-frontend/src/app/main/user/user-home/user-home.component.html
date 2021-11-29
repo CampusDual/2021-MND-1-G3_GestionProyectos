@@ -1,1 +1,13 @@
-<p>user-home works!</p>
+<div fxFill fxLayout="column" fxLayoutAlign="start">
+  <o-table fxFlex attr="projectTable" service="projects" entity="project" keys="project_id"
+    columns="project_id;project_name"
+  >
+    <o-table-column attr="user_" title="USERS" width="20px"></o-table-column>
+    <o-table-column attr="name" title="NAME" width="20px"></o-table-column>
+    <o-table-column attr="surname" title="SURNAME" width="20px"></o-table-column>
+    <o-table-column attr="email" title="EMAIL" width="20px"></o-table-column>
+    <o-table-column attr="nif" title="NIF" width="10px"></o-table-column>
+
+  </o-table>
+
+  </div>
