@@ -12,4 +12,43 @@
         <Column>user_</Column>
     </UpdateKeys>
     <GeneratedKey>user_</GeneratedKey>
+    <Queries>
+        <Query id="default">
+            <ValidColumns>
+                <Column>user_</Column>
+                <Column>email</Column>
+                <Column>password</Column>
+                <Column>name</Column>
+                <Column>surname</Column>
+                <Column>nif</Column>
+            </ValidColumns>
+            <Sentence>
+                <![CDATA[
+                    SELECT
+                        #COLUMNS#
+                    FROM
+                        ${mainschema}.tuser
+                    #WHERE#
+                ]]>
+            </Sentence>
+        </Query>    
+        <Query id="login">
+            <ValidColumns>
+                <Column>user_</Column>
+                <Column>email</Column>
+                <Column>password</Column>
+                <Column>name</Column>
+                <Column>surname</Column>
+            </ValidColumns>
+            <Sentence>
+                <![CDATA[
+                    SELECT 
+                        #COLUMNS#
+                    FROM                        
+                        ${mainschema}.tuser
+                    #WHERE#
+                ]]>
+            </Sentence>
+        </Query>
+    </Queries>
 </JdbcEntitySetup>
