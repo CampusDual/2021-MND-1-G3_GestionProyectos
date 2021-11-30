@@ -1,14 +1,14 @@
 <div fxFill fxLayout="column" fxLayoutAlign="start">
   <o-table fxFlex attr="userTable" service="users" entity="user" keys="user_"
     columns="user_;name;surname;email;nif;userblocked;lastpasswordupdate;firstlogin"
-    visible-columns="user_;name;surname;nif" query-rows="20">
+    visible-columns="user_;name;surname;nif;" query-rows="20">
     <o-table-column attr="user_" title="USERNAME"></o-table-column>
     <o-table-column attr="name" title="NAME"></o-table-column>
     <o-table-column attr="surname" title="SURNAME"></o-table-column>
     <o-table-column attr="nif" title="NIF"></o-table-column>
     <o-table-column attr="email" title="EMAIL"></o-table-column>
-    <o-table-column attr="userblocked" title="USERBLOCKED"></o-table-column>
-    <o-table-column attr="lastpasswordupdate" title="LASTPASSWORDUPDATE"></o-table-column>
+    <o-table-column attr="userblocked" title="USERBLOCKED" type="date" format="LL"></o-table-column>
+    <o-table-column attr="lastpasswordupdate" title="LASTPASSWORDUPDATE" type="date" format="LL"></o-table-column>
     <o-table-column attr="firstlogin" title="FIRSTLOGIN"></o-table-column>
   </o-table>
 </div>
