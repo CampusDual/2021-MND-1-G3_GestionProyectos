@@ -19,6 +19,7 @@
   "FORGOT_PWD": "Forgot your password?",
   "FOOTER_CREATED_BY": "Created by Imatia Innovation",
   "FOOTER_RIGHTS": "All rights reserved",
+<<<<<<< HEAD
   "NAME":"Name",
   "SURNAME":"Surname",
   "EMAIL":"Email",
@@ -27,4 +28,11 @@
   "LASTPASSWORDUPDATE":"Last password update",
   "FIRSTLOGIN":"First login",
   "PEOPLE":"Staff"
+=======
+  "USERS": "User name",
+  "NAME": "Name",
+  "SURNAME": "Surname",
+  "EMAIL": "Email",
+  "NIF": "ID"
+>>>>>>> 15e34eb7c7d3543d723f4136ccb998b5075d6f92
 }

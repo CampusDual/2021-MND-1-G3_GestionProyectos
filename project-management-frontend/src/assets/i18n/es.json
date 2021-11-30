@@ -19,6 +19,7 @@
   "FORGOT_PWD": "¿Has olvidado tu contraseña?",
   "FOOTER_CREATED_BY": "Creado por Imatia Innovation",
   "FOOTER_RIGHTS": "Todos los derechos reservados",
+<<<<<<< HEAD
   "NAME":"Nombre",
   "SURNAME":"Apellidos",
   "EMAIL":"Emilio🐱‍👤",
@@ -27,4 +28,11 @@
   "LASTPASSWORDUPDATE":"Última actualización de contraseña",
   "FIRSTLOGIN":"Primer inicio de sesión",
   "PEOPLE":"Personal"
+=======
+  "USERS": "Nombre de usuario",
+  "NAME": "Nombre",
+  "SURNAME": "Apellidos",
+  "EMAIL": "Correo electrónico",
+  "NIF" : "NIF"
+>>>>>>> 15e34eb7c7d3543d723f4136ccb998b5075d6f92
 }
