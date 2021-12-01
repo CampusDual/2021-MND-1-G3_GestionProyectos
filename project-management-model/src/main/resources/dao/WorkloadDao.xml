@@ -3,7 +3,7 @@
     xmlns="http://www.ontimize.com/schema/jdbc"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.ontimize.com/schema/jdbc http://www.ontimize.com/schema/jdbc/ontimize-jdbc-dao.xsd"
-    catalog="" schema="${mainschema}" table="tworkload"
+    catalog="" schema="${mainschema}" table="workload"
     datasource="mainDataSource" sqlhandler="dbSQLStatementHandler">
       <DeleteKeys>
         <Column>workload_id</Column>
@@ -11,4 +11,18 @@
     <UpdateKeys>
         <Column>workload_id</Column>
     </UpdateKeys>
+    <Queries>
+		<Query id="default">
+		<Sentence>
+		<![CDATA[
+     SELECT
+      #COLUMNS#
+     FROM
+    vworkloaduserproject
+     #WHERE#
+   ]]>
+   </Sentence>
+  </Query>
+ </Queries>
 </JdbcEntitySetup>
+
