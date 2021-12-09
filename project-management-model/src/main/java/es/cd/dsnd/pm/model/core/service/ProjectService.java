@@ -21,7 +21,7 @@ import es.cd.dsnd.pm.model.core.dao.ProjectDao;
 public class ProjectService implements IProjectService {
 
 	@Autowired
-	private ProjectDao ProjectDao;
+	private ProjectDao projectDao;
 
 	@Autowired
 	private DefaultOntimizeDaoHelper daoHelper;
@@ -30,22 +30,22 @@ public class ProjectService implements IProjectService {
 @Override 
 	public EntityResult projectQuery (Map<String, Object> keyMap, List<String> attrList) throws OntimizeJEERuntimeException
 	{
-		return this.daoHelper.query(ProjectDao, keyMap, attrList);
+		return this.daoHelper.query(projectDao, keyMap, attrList);
 	}
 @Override
 	public EntityResult projectInsert(Map<String, Object> attrMap) throws OntimizeJEERuntimeException
 	{
-		return this.daoHelper.insert(ProjectDao, attrMap);
+		return this.daoHelper.insert(projectDao, attrMap);
 	}
 @Override
 	public EntityResult projectUpdate(Map<String, Object> attrMap, Map<String, Object> keyMap) throws OntimizeJEERuntimeException
 	{
-		return this.daoHelper.update(ProjectDao, attrMap, keyMap);
+		return this.daoHelper.update(projectDao, attrMap, keyMap);
 	}
 @Override
 	public EntityResult projectDelete(Map<String, Object> keyMap) throws OntimizeJEERuntimeException
 	{
-		return this.daoHelper.delete(this.ProjectDao, keyMap);
+		return this.daoHelper.delete(this.projectDao, keyMap);
 	}
 
 }
