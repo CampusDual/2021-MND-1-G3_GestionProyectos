@@ -9,11 +9,12 @@ import { SharedModule } from '../../shared/shared.module';
 @NgModule({
   declarations: [
     UserHomeComponent,
-    UserDetailComponent],
+    UserDetailComponent,
+],
   imports: [
     CommonModule,
     OntimizeWebModule,
-   SharedModule,
+    SharedModule,
     UserRoutingModule
   ]
 })
