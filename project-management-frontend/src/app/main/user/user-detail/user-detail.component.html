@@ -1,24 +1,23 @@
-<o-form editable-detail="false" service="users" entity="user" keys="user_" show-header="yes"
-header-actions="R;D" show-header-navigation="yes" >
+<o-form editable-detail="false" service="users" entity="user" keys="user_">
   <o-row>
-    <!-- fxflex ok/class ok/parentkey no ok porque es una vista tiene parent-keys??/ -->
-    <o-table fxFlex="40" class="input-padding" attr="userTable" service="users" entity="user" keys="user_"
-    columns="user_;name;surname;email;nif"
-    visible-columns="user_;name;surname;nif" query-rows="20">
+    <o-column>
+      <o-text-input attr="user_"></o-text-input>
+      <o-text-input attr="name"></o-text-input>
+      <o-text-input attr="surname"></o-text-input>
+    </o-column>
+    <!--<o-table fxFlex="40" class="input-padding" attr="user" service="users" entity="user" keys="user_"
+    columns="user_;name;surname" parent-keys="user_:user[user_]" controls="no"
+    visible-columns="user_;name;surname" query-rows="20">
     <o-table-column attr="user_" title="USERNAME"></o-table-column>
     <o-table-column attr="name" title="NAME"></o-table-column>
     <o-table-column attr="surname" title="SURNAME"></o-table-column>
-    <o-table-column attr="nif" title="NIF"></o-table-column>
-    <o-table-column attr="email" title="EMAIL"></o-table-column>
-    </o-table>
-    <!-- holamundo este parece util workloads-->
-    <o-table fxFlex="60" attr="workloadTable" service="workloads" entity="workload" keys="id"
-      columns="project_id;project_name;workload_percentage;name;surname"
-      visible-columns="project_id;project_name;workload_percentage;name;surname" query-rows="15">
-      <o-table-column attr="project_id" title="ID" class="o-table-column-centered"></o-table-column>
-      <!-- hacer la transformación del porcentaje -->
-      <o-table-column attr="project_name" title="PROJECTNAME" class="o-table-column-centered"></o-table-column>
-      <o-table-column attr="workload_percentage" title="PERCENTAGE" class="o-table-column-centered"></o-table-column>
+    </o-table>-->
+    <o-table fxFlex attr="workloadTable" service="workloads" entity="workload" keys="id" controls="no"
+    columns="project_id;project_name;workload_percentage" parent-keys="user_"
+    visible-columns="project_id;project_name;workload_percentage" query-rows="15">
+    <o-table-column attr="project_id" title="ID" class="o-table-column-centered"></o-table-column>
+    <o-table-column attr="project_name" title="PROJECTNAME" class="o-table-column-centered"></o-table-column>
+    <o-table-column attr="workload_percentage" title="PERCENTAGE" type="percentage" class="o-table-column-centered"></o-table-column>
     </o-table>
   </o-row>
 </o-form>
