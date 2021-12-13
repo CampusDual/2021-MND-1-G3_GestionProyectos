@@ -26,5 +26,8 @@
   "USERBLOCKED":"Blocked date",
   "LASTPASSWORDUPDATE":"Last password update",
   "FIRSTLOGIN":"First login",
-  "PEOPLE":"Staff"
+  "PEOPLE":"Staff",
+  "ID":"ID",
+  "PROJECTNAME":"Project name",
+  "PERCENTAGE":"Workload percentage"
 }

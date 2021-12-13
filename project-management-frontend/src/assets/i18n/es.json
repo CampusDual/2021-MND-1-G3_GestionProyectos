@@ -21,10 +21,13 @@
   "FOOTER_RIGHTS": "Todos los derechos reservados",
   "NAME":"Nombre",
   "SURNAME":"Apellidos",
-  "EMAIL":"Emilio🐱‍👤",
+  "EMAIL":"Email",
   "NIF":"NIF",
   "USERBLOCKED":"Fecha de bloqueo",
   "LASTPASSWORDUPDATE":"Última actualización de contraseña",
   "FIRSTLOGIN":"Primer inicio de sesión",
-  "PEOPLE":"Personal"
+  "PEOPLE":"Personal",
+  "ID":"Identificador",
+  "PROJECTNAME":"Nombre del proyecto",
+  "PERCENTAGE":"Carga de trabajo"
 }
