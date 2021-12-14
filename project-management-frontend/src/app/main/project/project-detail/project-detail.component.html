@@ -1,0 +1,13 @@
+<o-form editable-detail="false" service="projects" entity="project" keys="project_id">
+  <o-row>
+    <o-column>
+      <o-text-input attr="project_id"></o-text-input>
+      <o-text-input attr="project_name"></o-text-input>
+    </o-column>
+  <!-- <o-table fxFlex="60" attr="workloadTable" service="workloads" entity="workload" keys="id" parent-keys="project_id"
+  columns="name" visible-columns="name" query-rows="20"> -->
+  <o-table fxFlex="60" attr="projectTable" service="projects" entity="project" keys="project_id"
+  columns="project_name" visible-columns="project_name" query-rows="20">
+    </o-table>
+  </o-row>
+</o-form>
