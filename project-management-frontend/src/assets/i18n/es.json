@@ -29,5 +29,11 @@
   "PEOPLE":"Personal",
   "ID":"Identificador",
   "PROJECTNAME":"Nombre del proyecto",
-  "PERCENTAGE":"Carga de trabajo"
+  "PERCENTAGE":"Carga de trabajo",
+  "PROJECTS":"Proyectos",
+  "PROJECTID":"Identificador de proyecto",
+  "CREATIONDATE":"Fecha de creación",
+  "INCOME":"Ingreso neto",
+  "PRIORITY":"Prioridad",
+  "DIFFICULTY":"Dificultad"
 }

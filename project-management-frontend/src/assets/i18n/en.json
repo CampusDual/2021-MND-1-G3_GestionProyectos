@@ -29,5 +29,11 @@
   "PEOPLE":"Staff",
   "ID":"ID",
   "PROJECTNAME":"Project name",
-  "PERCENTAGE":"Workload percentage"
+  "PERCENTAGE":"Workload percentage",
+  "PROJECTS":"Projects",
+  "PROJECTID":"Project ID",
+  "CREATIONDATE":"Creation date",
+  "INCOME":"Income",
+  "PRIORITY":"Priority",
+  "DIFFICULTY":"Difficulty"
 }
