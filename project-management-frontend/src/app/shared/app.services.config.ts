@@ -4,5 +4,8 @@ export const SERVICE_CONFIG: Object = {
   },
   'workloads': {
     'path': '/workloads'
+  },
+  'projects': {
+    'path': '/projects'
   }
 };
