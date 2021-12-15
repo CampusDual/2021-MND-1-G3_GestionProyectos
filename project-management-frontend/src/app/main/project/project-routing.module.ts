@@ -4,17 +4,14 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { ProjectsHomeComponent } from './projects-home/projects-home.component';
 
 const routes: Routes = [
-{
-  path:':project_id',
-  component: ProjectDetailComponent},
   {
     path : '',
     component: ProjectsHomeComponent
-  }
-
-
-
-];
+  },
+  {
+  path:':project_id',
+  component: ProjectDetailComponent
+  }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

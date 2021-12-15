@@ -1,9 +1,9 @@
 <o-form editable-detail="false" service="users" entity="user" keys="user_">
   <o-row>
     <o-column>
-      <o-text-input attr="user_"></o-text-input>
-      <o-text-input attr="name"></o-text-input>
-      <o-text-input attr="surname"></o-text-input>
+      <o-text-input attr="user_" label="USERNAME" class="padding-top"></o-text-input>
+      <o-text-input attr="name" label="NAME"></o-text-input>
+      <o-text-input attr="surname" label="SURNAME"></o-text-input>
     </o-column>
     <!--<o-table fxFlex="40" class="input-padding" attr="user" service="users" entity="user" keys="user_"
     columns="user_;name;surname" parent-keys="user_:user[user_]" controls="no"
@@ -12,7 +12,8 @@
     <o-table-column attr="name" title="NAME"></o-table-column>
     <o-table-column attr="surname" title="SURNAME"></o-table-column>
     </o-table>-->
-    <o-table fxFlex attr="workloadTable" service="workloads" entity="workload" keys="id" controls="no"
+    <o-table fxFlex=85 attr="workloadTable" service="workloads" entity="workload" keys="id"
+    insert-button="no" refresh-button="no" delete-button="no"
     columns="project_id;project_name;workload_percentage" parent-keys="user_"
     visible-columns="project_id;project_name;workload_percentage" query-rows="15">
     <o-table-column attr="project_id" title="ID" class="o-table-column-centered"></o-table-column>

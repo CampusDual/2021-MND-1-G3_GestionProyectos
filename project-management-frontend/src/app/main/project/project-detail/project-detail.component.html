@@ -1,13 +1,15 @@
-<o-form editable-detail="false" service="projects" entity="project" keys="project_id">
-  <o-row>
+<o-form editable-detail="false" service="projects" entity="project" keys="project_id" keys-sql-types="integer">
+ <o-row>
     <o-column>
-      <o-text-input attr="project_id"></o-text-input>
-      <o-text-input attr="project_name"></o-text-input>
+      <o-text-input attr="project_id" label="PROJECTID" class="padding-top"></o-text-input>
+      <o-text-input attr="project_name" label="PROJECTNAME"></o-text-input>
     </o-column>
-  <!-- <o-table fxFlex="60" attr="workloadTable" service="workloads" entity="workload" keys="id" parent-keys="project_id"
-  columns="name" visible-columns="name" query-rows="20"> -->
-  <o-table fxFlex="60" attr="projectTable" service="projects" entity="project" keys="project_id"
-  columns="project_name" visible-columns="project_name" query-rows="20">
-    </o-table>
+  <o-table fxFlex="85" attr="workloadTable" service="workloads" entity="workload" keys="id"
+  insert-button="no" refresh-button="no" delete-button="no"
+  parent-keys="project_id" columns="user_;name;surname;workload_percentage" visible-columns="user_;name;surname;workload_percentage" query-rows="20">
+    <o-table-column attr="name" title="NAME" class="o-table-column-centered"></o-table-column>
+    <o-table-column attr="surname" title="SURNAME" class="o-table-column-centered"></o-table-column>
+    <o-table-column attr="workload_percentage" title="PERCENTAGE" type="percentage" class="o-table-column-centered"></o-table-column>
+  </o-table>
   </o-row>
 </o-form>

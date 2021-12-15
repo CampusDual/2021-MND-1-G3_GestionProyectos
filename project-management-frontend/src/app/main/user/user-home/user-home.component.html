@@ -1,7 +1,8 @@
 <div fxFill fxLayout="column" fxLayoutAlign="start">
   <o-table fxFlex attr="userTable" service="users" entity="user" keys="user_"
+    insert-button="no" refresh-button="no" delete-button="no"
     columns="user_;name;surname;email;nif"
-    visible-columns="user_;name;surname;nif" query-rows="20">
+    visible-columns="user_;name;surname;nif" query-rows="20" >
     <o-table-column attr="user_" title="USERNAME"></o-table-column>
     <o-table-column attr="name" title="NAME"></o-table-column>
     <o-table-column attr="surname" title="SURNAME"></o-table-column>
