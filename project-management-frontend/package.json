@@ -32,7 +32,6 @@
     "@angular/service-worker": "~8.2.14",
     "@angular/upgrade": "^8.2.14",
     "core-js": "^3.6.4",
-    "flag-icon-css": "^4.1.6",
     "ngx-material-timepicker": "5.4.3",
     "ontimize-web-ngx": "8.5.4",
     "ontimize-web-ngx-theming": "8.1.0",
