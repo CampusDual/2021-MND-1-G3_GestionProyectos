@@ -7,6 +7,7 @@
   <o-table fxFlex="85" attr="workloadTable" service="workloads" entity="workload" keys="id"
   insert-button="no" refresh-button="no" delete-button="no"
   parent-keys="project_id" columns="user_;name;surname;workload_percentage" visible-columns="user_;name;surname;workload_percentage" query-rows="20">
+    <o-table-column attr="user_" title="USERNAME" class="o-table-column-centered"></o-table-column>
     <o-table-column attr="name" title="NAME" class="o-table-column-centered"></o-table-column>
     <o-table-column attr="surname" title="SURNAME" class="o-table-column-centered"></o-table-column>
     <o-table-column attr="workload_percentage" title="PERCENTAGE" type="percentage" class="o-table-column-centered"></o-table-column>
