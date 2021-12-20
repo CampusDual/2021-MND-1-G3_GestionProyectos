@@ -1,3 +1,10 @@
 .bg {
   background-color: darkred;
+  background-image: url('^assets/images/Imatia-tagline-03-b.png');
+      width: calc(100% - 640px);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      z-index: 1;
 }
