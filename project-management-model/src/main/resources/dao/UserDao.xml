@@ -21,13 +21,15 @@
                 <Column>name</Column>
                 <Column>surname</Column>
                 <Column>nif</Column>
+                <Column>area_name</Column>
+                <Column>rolename</Column>
             </ValidColumns>
             <Sentence>
                 <![CDATA[
                     SELECT
                         #COLUMNS#
                     FROM
-                        ${mainschema}.tuser
+                        vuserrolearea
                     #WHERE#
                 ]]>
             </Sentence>

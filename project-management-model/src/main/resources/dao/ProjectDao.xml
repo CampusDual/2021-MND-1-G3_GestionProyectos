@@ -11,4 +11,17 @@
     <UpdateKeys>
         <Column>project_id</Column>
     </UpdateKeys>
+     <Queries>
+		<Query id="default">
+		<Sentence>
+		<![CDATA[
+     SELECT
+      #COLUMNS#
+     FROM
+    vprojectarea
+     #WHERE#
+   ]]>
+   </Sentence>
+  </Query>
+ </Queries>
 </JdbcEntitySetup>
