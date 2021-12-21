@@ -32,8 +32,8 @@
   "PERCENTAGE":"Workload percentage",
   "PROJECTS":"Projects",
   "PROJECTID":"Project ID",
-  "CREATIONDATE":"Creation date",
-  "INCOME":"Income",
+  "CREATIONDATE":"Start date",
+  "INCOME":"Budget",
   "PRIORITY":"Priority",
   "DIFFICULTY":"Difficulty"
 }

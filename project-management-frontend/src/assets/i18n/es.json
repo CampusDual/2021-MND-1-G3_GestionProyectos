@@ -32,8 +32,8 @@
   "PERCENTAGE":"Carga de trabajo",
   "PROJECTS":"Proyectos",
   "PROJECTID":"Identificador de proyecto",
-  "CREATIONDATE":"Fecha de creación",
-  "INCOME":"Ingreso neto",
+  "CREATIONDATE":"Fecha de inicio",
+  "INCOME":"Presupuesto",
   "PRIORITY":"Prioridad",
   "DIFFICULTY":"Dificultad"
 }
