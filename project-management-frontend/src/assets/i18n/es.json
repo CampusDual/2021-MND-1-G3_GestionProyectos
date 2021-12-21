@@ -35,5 +35,10 @@
   "CREATIONDATE":"Fecha de inicio",
   "INCOME":"Presupuesto",
   "PRIORITY":"Prioridad",
-  "DIFFICULTY":"Dificultad"
+  "DIFFICULTY":"Dificultad",
+  "USERAREA":"Departamento",
+  "PROJECTAREA":"Departamento",
+  "AREANAME":"Departamento",
+  "ROLENAME":"Rol",
+  "DELIVERYTIME": "Fecha de entrega"
 }
