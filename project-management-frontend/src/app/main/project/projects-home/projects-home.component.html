@@ -1,6 +1,6 @@
 <div fxFill fxLayout="column" fxLayoutAlign="start">
   <o-table fxFlex attr="projectsTable" service="projects" entity="project" keys="project_id"
-    insert-button="no" refresh-button="no" delete-button="no"
+    insert-button="no" refresh-button="no" delete-button="yes"
     columns="project_id;project_name;creation_date;income;priority;difficulty;area_name;delivery_date"
     visible-columns="project_id;project_name;creation_date;income;priority;difficulty;area_name;delivery_date" query-rows="20">
     <o-table-column attr="project_id" title="PROJECTID"></o-table-column>

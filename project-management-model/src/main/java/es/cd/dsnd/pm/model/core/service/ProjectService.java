@@ -7,6 +7,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.ontimize.jee.common.dto.EntityResult;
 import com.ontimize.jee.common.exceptions.OntimizeJEERuntimeException;
@@ -43,6 +44,7 @@ public class ProjectService implements IProjectService {
 		return this.daoHelper.update(projectDao, attrMap, keyMap);
 	}
 @Override
+@Transactional(rollbackFor = Exception.class)
 	public EntityResult projectDelete(Map<String, Object> keyMap) throws OntimizeJEERuntimeException
 	{
 		return this.daoHelper.delete(this.projectDao, keyMap);
