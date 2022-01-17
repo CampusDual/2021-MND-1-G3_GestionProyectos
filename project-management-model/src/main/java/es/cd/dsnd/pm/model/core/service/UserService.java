@@ -12,9 +12,9 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import es.cd.dsnd.pm.api.core.service.IUserService;
-import es.cd.dsnd.pm.model.core.dao.UserDao;
 import com.ontimize.jee.common.dto.EntityResult;
 import com.ontimize.jee.server.dao.DefaultOntimizeDaoHelper;
+import es.cd.dsnd.pm.model.core.dao.UserDao;
 
 
 @Lazy
@@ -45,7 +45,7 @@ public class UserService implements IUserService {
 	}
 
 	public EntityResult userDelete(Map<?, ?> keyMap) {
-		return this.daoHelper.update(this.userDao, attrMap, keyMap);
+		return this.daoHelper.delete(userDao, keyMap);
 	}
 
 }
