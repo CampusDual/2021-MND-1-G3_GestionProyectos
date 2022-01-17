@@ -5,12 +5,14 @@ import { ProjectRoutingModule } from './project-routing.module';
 import { ProjectsHomeComponent } from './projects-home/projects-home.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { SharedModule } from '../../shared/shared.module';
+import { ProjectNewComponent } from './project-new/project-new.component';
 
 
 @NgModule({
   declarations: [
     ProjectsHomeComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    ProjectNewComponent
   ],
   imports: [
     CommonModule,
