@@ -15,4 +15,16 @@ public interface IProjectService {
 	public EntityResult projectUpdate(Map<String, Object> attrMap, Map<String, Object> keyMap) throws OntimizeJEERuntimeException;
 	public EntityResult projectDelete(Map<String, Object> keyMap) throws OntimizeJEERuntimeException;
 
+
+ // ---- AREA ----
+ public EntityResult areaQuery(Map<String, Object> keysValues, List<String> attributes) throws OntimizeJEERuntimeException;
+ public EntityResult areaInsert(Map<String, Object> attributes) throws OntimizeJEERuntimeException;
+ public EntityResult areaUpdate(Map<String, Object> attributes, Map<String, Object> keyValues) throws OntimizeJEERuntimeException;
+ public EntityResult areaDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException;
+
+ // ---- AREA_PROJECT ----
+ public EntityResult areaProjectQuery(Map<String, Object> keysValues, List<String> attributes) throws OntimizeJEERuntimeException;
+ public EntityResult areaProjectInsert(Map<String, Object> attributes) throws OntimizeJEERuntimeException;
+ public EntityResult areaProjectUpdate(Map<String, Object> attributes, Map<String, Object> keyValues) throws OntimizeJEERuntimeException;
+ public EntityResult areaProjectDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException;
 }
