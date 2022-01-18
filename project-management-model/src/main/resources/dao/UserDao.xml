@@ -21,7 +21,7 @@
                 <Column>name</Column>
                 <Column>surname</Column>
                 <Column>nif</Column>
-                <Column>area_name</Column>
+                <Column>area_user</Column>
                 <Column>rolename</Column>
             </ValidColumns>
             <Sentence>
