@@ -1,0 +1,18 @@
+<o-form service="users" entity="user" keys="user_" columns="user_" show-header="yes">
+  <o-row>
+    <o-text-input attr="user_" class="input-padding" fxFlex="33" required="yes"></o-text-input>
+    <o-text-input attr="name" class="input-padding" fxFlex="33" required="yes"></o-text-input>
+    <o-text-input attr="surname" class="input-padding" fxFlex="33" required="yes"></o-text-input>
+  </o-row>
+
+  <o-row>
+    <o-text-input attr="email" class="input-padding" fxFlex="50" required="yes"></o-text-input>
+    <o-text-input attr="nif" class="input-padding" fxFlex="50" required="yes"></o-text-input>
+  </o-row>
+
+    <o-row>
+
+      <o-list-picker attr="id_rolename" service="users" entity="user" keys="id_rolename" columns="id_rolename;rolename" visible-columns="rolename" value-column="id_rolename"></o-list-picker>
+      <o-list-picker attr="area_user" service="projects" entity= "area" keys="area_id" columns="area_id;area_name" visible-columns="area_name" value-column="area_id"></o-list-picker>
+    </o-row>
+  </o-form>
