@@ -1,14 +1,14 @@
 <div fxFill fxLayout="column" fxLayoutAlign="start">
   <o-table fxFlex attr="projectsTable" service="projects" entity="project" keys="project_id"
     insert-button="yes" refresh-button="no" delete-button="yes"
-    columns="project_id;project_name;creation_date;income;priority;difficulty;area_name;delivery_date"
-    visible-columns="project_id;project_name;creation_date;income;priority;difficulty;area_name;delivery_date" query-rows="20">
+    columns="project_id;project_name;creation_date;income;priority_id;difficulty_id;area_name;delivery_date"
+    visible-columns="project_id;project_name;creation_date;income;priority_id;difficulty_id;area_name;delivery_date" query-rows="20">
     <o-table-column attr="project_id" title="PROJECTID"></o-table-column>
     <o-table-column attr="project_name" title="PROJECTNAME"></o-table-column>
     <o-table-column attr="creation_date" title="CREATIONDATE" type="date" format="LL"></o-table-column>
     <o-table-column attr="income" title="INCOME" type="currency" currency-symbol="€" currency-symbol-position="right"></o-table-column>
-    <o-table-column attr="priority" title="PRIORITY"></o-table-column>
-    <o-table-column attr="difficulty" title="DIFFICULTY"></o-table-column>
+    <o-table-column attr="priority_id" title="PRIORITY"></o-table-column>
+    <o-table-column attr="difficulty_id" title="DIFFICULTY"></o-table-column>
     <o-table-column attr="area_name" title="AREANAME"></o-table-column>
     <o-table-column attr="delivery_date" title="DELIVERYTIME" type="date" format="LL"></o-table-column>
   </o-table>
