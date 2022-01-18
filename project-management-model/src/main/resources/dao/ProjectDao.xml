@@ -11,6 +11,7 @@
     <UpdateKeys>
         <Column>project_id</Column>
     </UpdateKeys>
+    <GeneratedKey>project_id</GeneratedKey>
      <Queries>
 		<Query id="default">
 		<Sentence>
