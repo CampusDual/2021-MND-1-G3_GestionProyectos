@@ -7,8 +7,12 @@
     <o-table-column attr="project_name" title="PROJECTNAME"></o-table-column>
     <o-table-column attr="creation_date" title="CREATIONDATE" type="date" format="LL"></o-table-column>
     <o-table-column attr="income" title="INCOME" type="currency" currency-symbol="€" currency-symbol-position="right"></o-table-column>
-    <o-table-column attr="priority_id" title="PRIORITY"></o-table-column>
-    <o-table-column attr="difficulty_id" title="DIFFICULTY"></o-table-column>
+    <o-table-column attr="priority_id" title="PRIORITY">
+      <o-table-cell-renderer-service service="projects" entity="level" columns="valor_nivel;nivel" value-column="nivel" parent-keys="valor_nivel:priority_id"></o-table-cell-renderer-service>
+    </o-table-column>
+    <o-table-column attr="difficulty_id" title="DIFFICULTY">
+      <o-table-cell-renderer-service service="projects" entity="level" columns="valor_nivel;nivel" value-column="nivel" parent-keys="valor_nivel:difficulty_id"></o-table-cell-renderer-service>
+    </o-table-column>
     <o-table-column attr="area_name" title="AREANAME"></o-table-column>
     <o-table-column attr="delivery_date" title="DELIVERYTIME" type="date" format="LL"></o-table-column>
   </o-table>
