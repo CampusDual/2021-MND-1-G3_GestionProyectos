@@ -1,23 +1,26 @@
 <o-form service="projects" entity="project" keys="project_id" columns="project_id" show-header="yes">
   <o-row>
-    <!-- <o-combo attr="project_name" fxFlex="60" service="projects" entity="project" keys="project_id" columns="project_id,project_name,creation_date,income,priority,difficulty,delivery_date,id_project_area,area_id,area_name" visible-columns=""
-      value-column="id_project_area" class="input-padding" required="no"></o-combo> -->
-      <o-date-input attr="creation_date" fxFlex="20" required="yes"></o-date-input>
-      <o-date-input attr="delivery_date" class="input-padding" fxFlex="20"></o-date-input>
+    <o-date-input attr="creation_date" class="input-padding" fxFlex="50" required="yes"></o-date-input>
+    <o-date-input attr="delivery_date" class="input-padding" fxFlex="50" required="yes"></o-date-input>
+  </o-row>
+
+  <o-row>
+
+    <o-list-picker attr="project_id" service="projects" entity="project" keys="project_id" columns="project_id" visible-columns="project_id" value-column="project_id" fxFlex="33" required="yes"></o-list-picker>
+    <o-text-input attr="project_name" class="input-padding" fxFlex="34" required="yes"></o-text-input>
+    <!-- <o-list-picker attr="income" service="projects" entity="project" keys="project_id" columns="project_id" visible-columns="project_id" value-column="project_id" fxFlex="33" required="yes"></o-list-picker> -->
+  <o-currency-input attr="income" fxFlex="33"> </o-currency-input>
   </o-row>
   <o-row>
-      <!-- <o-text-input attr="project_id" class="input-padding" fxFlex="20"></o-text-input>
-      <o-text-input attr="project_name" class="input-padding" fxFlex="20"></o-text-input> -->
+
       <!-- <o-list-picker service="" entity="" keys="" columns="" visible-columns="" value-column=""></o-list-picker> -->
-      <o-text-input attr="income" class="input-padding" fxFlex="20"></o-text-input>
-      <o-text-input attr="priority" class="input-padding" fxFlex="20"></o-text-input>
-      <o-text-input attr="difficulty" class="input-padding" fxFlex="20"></o-text-input>
 
     </o-row>
     <o-row>
       <!-- <o-text-input attr="id_project_area" class="input-padding" fxFlex="20"></o-text-input>
       <o-text-input attr="area_id" class="input-padding" fxFlex="20"></o-text-input>
       <o-text-input  attr="area_name"s fxFlex="60"></o-text-input> -->
+
       <o-list-picker attr="area_project" service="projects" entity="area" keys="area_id" columns="area_id;area_name" visible-columns="area_name" value-column="area_id"></o-list-picker>
     </o-row>
 </o-form>
