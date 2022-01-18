@@ -16,6 +16,7 @@ import com.ontimize.jee.server.dao.DefaultOntimizeDaoHelper;
 import es.cd.dsnd.pm.api.core.service.IProjectService;
 import es.cd.dsnd.pm.model.core.dao.AreaDao;
 import es.cd.dsnd.pm.model.core.dao.AreaProjectDao;
+import es.cd.dsnd.pm.model.core.dao.LevelsDao;
 import es.cd.dsnd.pm.model.core.dao.ProjectDao;
 
 
@@ -29,7 +30,7 @@ public class ProjectService implements IProjectService {
 	 @Autowired private AreaDao areaDao;
 
 	 @Autowired private AreaProjectDao areaProjectDao;
-	
+	 @Autowired private LevelsDao levelsDao;
 	@Autowired
 	private DefaultOntimizeDaoHelper daoHelper;
 
@@ -98,6 +99,28 @@ public EntityResult areaProjectUpdate(Map<String, Object> attributes, Map<String
 public EntityResult areaProjectDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
 
 	return this.daoHelper.delete(this.areaProjectDao, keyValues);
+}
+@Override
+public EntityResult levelQuery(Map<String, Object> keysValues, List<String> attributes)
+		throws OntimizeJEERuntimeException {
+	// TODO Auto-generated method stub
+	return this.daoHelper.query(levelsDao, keysValues, attributes);
+}
+@Override
+public EntityResult levelInsert(Map<String, Object> attributes) throws OntimizeJEERuntimeException {
+	// TODO Auto-generated method stub
+	return this.daoHelper.insert(this.levelsDao, attributes);
+}
+@Override
+public EntityResult levelUpdate(Map<String, Object> attributes, Map<String, Object> keyValues)
+		throws OntimizeJEERuntimeException {
+	// TODO Auto-generated method stub
+	return this.daoHelper.update(this.levelsDao, keyValues, attributes);
+}
+@Override
+public EntityResult levelDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
+	// TODO Auto-generated method stub
+	return this.daoHelper.delete(this.levelsDao, keyValues);
 }
 
 }

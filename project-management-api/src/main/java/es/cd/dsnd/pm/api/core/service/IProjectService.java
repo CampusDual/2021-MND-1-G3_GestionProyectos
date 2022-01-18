@@ -27,4 +27,10 @@ public interface IProjectService {
  public EntityResult areaProjectInsert(Map<String, Object> attributes) throws OntimizeJEERuntimeException;
  public EntityResult areaProjectUpdate(Map<String, Object> attributes, Map<String, Object> keyValues) throws OntimizeJEERuntimeException;
  public EntityResult areaProjectDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException;
+
+ //---LEVELS---
+public EntityResult levelQuery(Map<String, Object> keysValues, List<String> attributes) throws OntimizeJEERuntimeException;
+public EntityResult levelInsert(Map<String, Object> attributes) throws OntimizeJEERuntimeException;
+public EntityResult levelUpdate(Map<String, Object> attributes, Map<String, Object> keyValues) throws OntimizeJEERuntimeException;
+public EntityResult levelDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException;
 }
