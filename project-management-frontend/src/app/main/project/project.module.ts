@@ -6,13 +6,15 @@ import { ProjectsHomeComponent } from './projects-home/projects-home.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { SharedModule } from '../../shared/shared.module';
 import { ProjectNewComponent } from './project-new/project-new.component';
+import { AddUserComponent } from './add-user/add-user.component';
 
 
 @NgModule({
   declarations: [
     ProjectsHomeComponent,
     ProjectDetailComponent,
-    ProjectNewComponent
+    ProjectNewComponent,
+    AddUserComponent
   ],
   imports: [
     CommonModule,

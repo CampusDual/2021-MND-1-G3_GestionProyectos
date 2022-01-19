@@ -6,10 +6,10 @@
     catalog="" schema="${mainschema}" table="workload"
     datasource="mainDataSource" sqlhandler="dbSQLStatementHandler">
       <DeleteKeys>
-        <Column>workload_id</Column>
+        <Column>id</Column>
     </DeleteKeys>
     <UpdateKeys>
-        <Column>workload_id</Column>
+        <Column>id</Column>
     </UpdateKeys>
     <Queries>
 		<Query id="default">
