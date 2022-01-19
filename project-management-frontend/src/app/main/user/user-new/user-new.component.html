@@ -1,18 +1,20 @@
 <o-form service="users" entity="user" keys="user_" columns="user_" show-header="yes">
   <o-row>
-    <o-text-input attr="user_" label="USERNAME" class="input-padding" fxFlex="33" required="yes"></o-text-input>
-    <o-text-input attr="name" label="NAME" class="input-padding" fxFlex="33" required="yes"></o-text-input>
-    <o-text-input attr="surname" label="SURNAME" class="input-padding" fxFlex="33" required="yes"></o-text-input>
+    <o-text-input attr="email" label="EMAIL" class="input-padding" fxFlex="50" required="yes"></o-text-input>
+    <o-text-input attr="user_" label="USERNAME" class="input-padding" fxFlex="50" required="yes"></o-text-input>
   </o-row>
 
-
   <o-row>
-    <o-text-input attr="email" label="EMAIL" class="input-padding" fxFlex="50" required="yes"></o-text-input>
+    <o-text-input attr="name" label="NAME" class="input-padding" fxFlex="33" required="yes"></o-text-input>
+    <o-text-input attr="surname" label="SURNAME" class="input-padding" fxFlex="33" required="yes"></o-text-input>
     <o-text-input attr="nif" label="NIF"class="input-padding" fxFlex="50" required="yes"></o-text-input>
   </o-row>
 
+
+
+
     <o-row>
-      <o-list-picker attr="id_rolename" label="ROLENAME" service="users" entity="role" keys="id_rolename" columns="id_rolename;rolename" visible-columns="rolename" value-column="id_rolename"></o-list-picker>
-      <o-list-picker attr="area_user" label="AREANAME" service="projects" entity= "area" keys="area_id" columns="area_id;area_name" visible-columns="area_name" value-column="area_id"></o-list-picker>
+      <o-combo attr="id_rolename" label="ROLENAME" service="users" entity="role" keys="id_rolename" columns="id_rolename;rolename" visible-columns="rolename" value-column="id_rolename"></o-combo>
+        <o-combo attr="area_user" label="AREANAME" service="projects" entity= "area" keys="area_id" columns="area_id;area_name" visible-columns="area_name" value-column="area_id"></o-combo>
     </o-row>
   </o-form>
