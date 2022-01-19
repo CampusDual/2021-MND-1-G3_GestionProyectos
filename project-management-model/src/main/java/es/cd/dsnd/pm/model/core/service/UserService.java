@@ -11,12 +11,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ontimize.jee.common.dto.EntityResult;
+import com.ontimize.jee.common.dto.EntityResultMapImpl;
 import com.ontimize.jee.common.exceptions.OntimizeJEERuntimeException;
 import com.ontimize.jee.server.dao.DefaultOntimizeDaoHelper;
 
 import es.cd.dsnd.pm.api.core.service.IUserService;
 import es.cd.dsnd.pm.model.core.dao.RoleDao;
 import es.cd.dsnd.pm.model.core.dao.UserDao;
+import es.cd.dsnd.pm.model.core.dao.UserRoleDao;
 
 
 @Lazy
@@ -28,6 +30,9 @@ public class UserService implements IUserService {
 	
 	@Autowired
 	private RoleDao roleDao;
+	
+	@Autowired
+	private UserRoleDao userRoleDao;
 
 	@Autowired
 	private DefaultOntimizeDaoHelper daoHelper;
@@ -46,7 +51,23 @@ public class UserService implements IUserService {
 		//Map<String, Object> nonUserData = removeNonRelatedData(attrMap, RoleDao.ID_ROLENAME);
 		 //this.insertNonRelatedData(nonUserData);
 		 //attrMap.putAll(nonUserData);
-		return this.daoHelper.insert(userDao, attrMap);
+		EntityResult insertUser = this.daoHelper.insert(userDao, attrMap);
+		
+		if (insertUser.getCode() != EntityResult.OPERATION_WRONG) {
+			Map<String, Object> userRoleAttr = new HashMap<String, Object>();
+			userRoleAttr.put("user_", attrMap.get("user_"));
+			userRoleAttr.put("id_rolename", attrMap.get("id_rolename"));
+			EntityResult insert = this.daoHelper.insert(this.userRoleDao, userRoleAttr);
+			
+			if (insert.getCode() != EntityResult.OPERATION_WRONG) {
+				return insertUser;
+			}
+		}
+		
+		EntityResult toret = new EntityResultMapImpl();
+		toret.setCode(EntityResult.OPERATION_WRONG);
+		toret.setMessage("No se ha podido añadir el usuario");
+		return toret;
 	}
 	/*
 	private Map<String, Object> removeNonRelatedData(Map<String, Object> attrMap, String... attrToExclude) {

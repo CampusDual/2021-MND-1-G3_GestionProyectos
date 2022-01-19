@@ -9,13 +9,15 @@ const routes: Routes = [{
   component: UserHomeComponent
 },
 {
-  path:':new',
+  path:'new',
   component: UserNewComponent
 },
 {
   path:':user_',
   component: UserDetailComponent
-}];
+}
+
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
