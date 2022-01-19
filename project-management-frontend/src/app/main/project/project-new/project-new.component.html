@@ -18,7 +18,7 @@
       <o-text-input  attr="area_name"s fxFlex="60"></o-text-input> -->
 
       <o-list-picker attr="area_project" service="projects" entity="area" keys="area_id" columns="area_id;area_name" visible-columns="area_name" value-column="area_id"></o-list-picker>
-      <o-list-picker attr="priority_id" service="projects" entity="level" keys="valor_nivel" columns="valor_nivel;nivel" visible-columns="nivel" value-column="valor_nivel" fxFlex="33" required="yes"></o-list-picker>
-      <o-list-picker attr="difficulty_id" service="projects" entity="level" keys="valor_nivel" columns="valor_nivel;nivel" visible-columns="nivel" value-column="valor_nivel" fxFlex="33" required="yes"></o-list-picker>
+      <o-combo attr="priority_id" service="projects" entity="level" keys="valor_nivel" columns="valor_nivel;nivel" visible-columns="nivel" value-column="valor_nivel" fxFlex="33" required="yes"></o-combo>
+      <o-combo attr="difficulty_id" service="projects" entity="level" keys="valor_nivel" columns="valor_nivel;nivel" visible-columns="nivel" value-column="valor_nivel" fxFlex="33" required="yes"></o-combo>
     </o-row>
 </o-form>

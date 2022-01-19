@@ -14,4 +14,10 @@ public interface IUserService {
 	public EntityResult userUpdate(Map<?, ?> attrMap, Map<?, ?> keyMap);
 	public EntityResult userDelete(Map<?, ?> keyMap);
 
+	//--ROLE--
+	public EntityResult roleQuery(Map<?, ?> keyMap, List<?> attrList);
+	public EntityResult roleInsert(Map<?, ?> attrMap);
+	public EntityResult roleUpdate(Map<?, ?> attrMap, Map<?, ?> keyMap);
+	public EntityResult roleDelete(Map<?, ?> keyMap);
+
 }
