@@ -6,6 +6,7 @@
       <o-text-input attr="surname" label="SURNAME"></o-text-input>
       <o-text-input attr="nif" label="NIF"></o-text-input>
       <o-text-input attr="email" label="EMAIL"></o-text-input>
+      <o-combo attr="area_user" label="AREANAME" service="projects" entity= "area" keys="area_id" columns="area_id;area_name" visible-columns="area_name" value-column="area_id"></o-combo>
     </o-column>
     <!--<o-table fxFlex="40" class="input-padding" attr="user" service="users" entity="user" keys="user_"
     columns="user_;name;surname" parent-keys="user_:user[user_]" controls="no"
